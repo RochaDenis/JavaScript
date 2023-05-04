@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nationalisation</title>
+</head>
+<body>
+    <h1>Sistema de nacionalização</h1>
+    Digite sua nacionalidade: <input type="string" name="txtnat" id="txtnat">
+    <input type="button" value="Confirmar" onclick="clicar()">
+    <div id="res"></div>
+    <script>
+        function clicar(){
+            var txtnat = document.querySelector('input#txtnat')
+            var res = document.querySelector('div#res')
+            var nat = (txtnat.value)
+                if (nat != 'Brasileiro'){
+                res.innerHTML = `<p>Você não é Brasileiro</p>`}
+                res.innerHTML += `<p>Você é ${nat}.`
+        }
+    </script>
+    
+
+</body>
+</html>
